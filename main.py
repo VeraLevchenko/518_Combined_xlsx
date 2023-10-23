@@ -3,7 +3,7 @@ import os
 import glob
 
 os.getcwd()
-os.chdir('data')
+os.chdir('Data')
 print(os.getcwd())
 
 xl_files = glob.glob('*.xlsx')
@@ -21,4 +21,4 @@ for xl_file in xl_files:
         # Дописать в датафрейм combined
         combined = combined._append(data)
 
-combined.to_excel('sales_combined.xlsx', index=False)
+combined.to_excel('combined.xlsx', index=False)
